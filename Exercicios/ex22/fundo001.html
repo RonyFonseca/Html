@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundos</title>
+    <style>
+        body {
+            background-color: rgb(21, 21, 21)
+        }
+
+        .square {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            margin-bottom: 30px;
+            transition: 1s;
+        }
+
+        .square > p {
+            font-family: sans-serif;
+            font-size: 2em;
+        }
+
+        .square:hover {
+            transform: scale(1.1);
+        }
+
+        div:nth-of-type(1) {
+            background-color: lightblue;
+        }
+
+        div:nth-of-type(2) {
+            background-image: linear-gradient(to right, yellow, orange);
+        }
+
+        div:nth-of-type(3) {
+            background-image: url("imagens/wallpaper003.jpg");
+            background-size: cover;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="square">
+        <p>Conteúdo</p>
+    </div>
+    <div class="square">
+        <p>Conteúdo</p>
+    </div>
+    <div class="square">
+        <p>Conteúdo</p>
+    </div>
+</body>
+</html>
