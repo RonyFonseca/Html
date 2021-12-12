@@ -8,3 +8,4 @@ Link da minha bio: https://ronyfonseca.github.io/Rony_Fonseca/
 
 Link do cordel: https://ronyfonseca.github.io/Cordel-Milton-Duarte/
 
+Link do prejeto de uma nova bio: https://ronyfonseca.github.io/Rony_Fonseca02/
