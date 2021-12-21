@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: arial;
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 100px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            border: 1px solid black;
+            color: white;
+        }
+
+        th {
+            border: 1px solid black;
+            background-color: gray;
+            color: white;
+            width: 100px;
+        }
+
+        tbody > tr > td {
+            padding: 10px;
+        }
+
+        .num {
+            text-align: right;
+            width: 50px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Minhas notas</caption>
+        <thead>
+            <th>Bimestres</th>
+            <th scope="col">Mátematica</th>
+            <th scope="col">Português</th>
+            <th scope="col">Fisica</th>
+            <th scope="col">Quimica</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>1° Bimestre:</th>
+                <td class="num">10</td>
+                <td class="num">8</td>
+                <td class="num">8</td>
+                <td class="num">8,5</td>
+            </tr>
+            <tr>
+                <th>2° Bimestre:</th>
+                <td class="num">10</td>
+                <td class="num">9,5</td>
+                <td class="num">9</td>
+                <td class="num">9,5</td>
+            </tr>
+            <tr>
+                <th>3° Bimestre:</th>
+                <td class="num">10</td>
+                <td class="num">8</td>
+                <td class="num">7</td>
+                <td class="num">9,5</td>
+            </tr>
+            <tr>
+                <th>4° Bimestre:</th>
+                <td class="num">10</td>
+                <td class="num">10</td>
+                <td class="num">7,5</td>
+                <td class="num">9,5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">soma total:</th>
+                <td class="num"><strong>40</strong></td>
+                <td class="num"><strong>35,5</strong></td>
+                <td class="num"><strong>31,5</strong></td>
+                <td class="num"><strong>37</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
