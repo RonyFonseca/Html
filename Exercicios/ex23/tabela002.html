@@ -8,17 +8,25 @@
     <style>
         body {
             font-family: arial;
-            display: flex;
-            justify-content: center;
         }
 
         table {
             border-collapse: collapse;
+            position: relative;
         }
 
         td {
             border: 1px solid black;
             width: 100px;
+        }
+
+        thead  th {
+            position: sticky;
+            top: -1px;
+        }
+
+        thead th:nth-of-type(1) {
+            position: static;
         }
 
         thead, tfoot {
@@ -42,7 +50,7 @@
             background-color: lightgray;
         }
 
-        .num {
+        td {
             text-align: right;
             width: 50px;
         }
@@ -61,52 +69,128 @@
     <table>
         <caption>Minhas notas</caption>
         <thead>
-            <th>Bimestres</th>
-            <th scope="col">Mátematica</th>
-            <th scope="col">Português</th>
-            <th scope="col">Fisica</th>
-            <th scope="col">Quimica</th>
+            <th scope="col">Bimestres</th>
+            <th scope="col">1° Bimestre</th>
+            <th scope="col">2° Bimestre</th>
+            <th scope="col">3° Bimestre</th>
+            <th scope="col">5° Bimestre</th>
         </thead>
 
         <tbody>
             <tr>
-                <th>1° Bimestre:</th>
-                <td class="num">10</td>
-                <td class="num">8</td>
-                <td class="num">8</td>
-                <td class="num">8,5</td>
+                <th scope="row">Matemática</th>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
             </tr>
             <tr>
-                <th>2° Bimestre:</th>
-                <td class="num">10</td>
-                <td class="num">9,5</td>
-                <td class="num">9</td>
-                <td class="num">9,5</td>
+                <th scope="row">postuguês</th>
+                <td>8</td>
+                <td>9,5</td>
+                <td>8</td>
+                <td>10</td>
             </tr>
             <tr>
-                <th>3° Bimestre:</th>
-                <td class="num">10</td>
-                <td class="num">8</td>
-                <td class="num">7</td>
-                <td class="num">9,5</td>
+                <th scope="row">Fisica</th>
+                <td>8</td>
+                <td>9</td>
+                <td>7</td>
+                <td>7,5</td>
             </tr>
             <tr>
-                <th>4° Bimestre:</th>
-                <td class="num">10</td>
-                <td class="num">10</td>
-                <td class="num">7,5</td>
-                <td class="num">9,5</td>
+                <th scope="row">Quimica</th>
+                <td>8,5</td>
+                <td>9,5</td>
+                <td>9,5</td>
+                <td>9,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Arte</th>
+                <td>8</td>
+                <td>8</td>
+                <td>8,5</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row">Biologia</th>
+                <td>9,5</td>
+                <td>10</td>
+                <td>8,5</td>
+                <td>9,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Educação Física</th>
+                <td>9</td>
+                <td>10</td>
+                <td>9</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th scope="row">Filosofia</th>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Geografia</th>
+                <td>8</td>
+                <td>10</td>
+                <td>8,5</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th scope="row">História</th>
+                <td>7,5</td>
+                <td>8</td>
+                <td>9,5</td>
+                <td>8,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Sociologia</th>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Biologia Esperimental</th>
+                <td>10</td>
+                <td>10</td>
+                <td>9,5</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row">Fisica Experimental</th>
+                <td>8,5</td>
+                <td>10</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row">Ingles</th>
+                <td>7</td>
+                <td>10</td>
+                <td>9</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th scope="row">Projeto de Vida</th>
+                <td>7,5</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row">Química Experimental</th>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>9,5</td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">soma total:</th>
-                <td class="num"><strong>40</strong></td>
-                <td class="num"><strong>35,5</strong></td>
-                <td class="num"><strong>31,5</strong></td>
-                <td class="num"><strong>37</strong></td>
-            </tr>
-        </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex neque laudantium rerum facilis expedita sint obcaecati animi iure, eos explicabo soluta, hic corrupti incidunt sequi. Error saepe illo voluptate mollitia?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cumque dignissimos, ullam aut velit a reiciendis eos ut quos asperiores quo sint sapiente voluptas adipisci cupiditate voluptatum similique nemo possimus.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime ratione tempore fugiat nihil corrupti incidunt nostrum soluta quia. Dicta laudantium aperiam et maiores pariatur magnam quas quia! Distinctio, amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident inventore asperiores molestias architecto! Eaque blanditiis assumenda inventore, ea nostrum illum quasi dignissimos facilis nulla tempore necessitatibus quia debitis temporibus?</p>
 </body>
 </html>
