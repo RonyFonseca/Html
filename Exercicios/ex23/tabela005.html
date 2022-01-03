@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas cores</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .numero-table {
+            text-align: center;
+        }
+
+        .idade-table {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Cadastros</caption>
+        <thead>
+            <colgroup>
+                <col class="nome-table">
+                <col class="idade-table">
+                <col class="sexo-table">
+            </colgroup>
+            <tr>
+                <th scope="col">nome</th>
+                <th scope="col">idade</th>
+                <th scope="col">sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rony</td>
+                <td class="numero-table">15</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Bruno</td>
+                <td class="numero-table">17</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Aline</td>
+                <td class="numero-table">20</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
